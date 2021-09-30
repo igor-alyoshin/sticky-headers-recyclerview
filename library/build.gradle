@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion as Integer
@@ -17,4 +18,5 @@ android {
 
 dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "com.github.jitpack:android-example:2.2"
 }
