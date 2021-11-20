@@ -1,2 +1,3 @@
 rootProject.name = "sticky-headers-recyclerview"
-include ':sample', ':library'
+include ':sample'
+include ':library'
