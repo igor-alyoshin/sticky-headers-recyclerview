@@ -122,14 +122,13 @@ public class HeaderPositionCalculator {
     }
 
     if (orientation == LinearLayoutManager.VERTICAL) {
-      translationX = (int) firstView.getX() - leftMargin + mTempRect1.left;
+      translationX = - leftMargin + mTempRect1.left;
       translationY = Math.max((int)
                       firstView.getY() - topMargin - header.getHeight() - mTempRect1.bottom,
               getListTop(recyclerView) + mTempRect1.top);
     } else {
       translationY = (int) firstView.getY() - topMargin + mTempRect1.top;
-      translationX = Math.max((int)
-                      firstView.getX() - leftMargin - header.getWidth() - mTempRect1.right,
+      translationX = Math.max(- leftMargin - header.getWidth() - mTempRect1.right,
               getListLeft(recyclerView) + mTempRect1.left);
     }
 
